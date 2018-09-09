@@ -1,0 +1,27 @@
+
+<%= render 'shared/errors', obj: @teacher %>
+
+<div class="col-md-6 offset-md-3">
+
+	<div class="signup-form">
+
+		<h2>Teacher Sign Up</h2><br/>
+
+<%= simple_form_for @teacher, :html => { :multipart => true } do |f| %>
+<div class="form-inputs">
+<%= f.input :teacher_name, required: true, autofocus: true, label: "Name" %>
+<%= f.input :teacher_country, required: true, label: "Country", collection: [ "Portugal", "Lithuania", "Spain", "Greece" ] %>
+<%= f.input :email, required: true %>
+<%= f.input :password, required: true %>
+<%= f.input :password_confirmation, required: true %>
+<%= f.input :area_field, required: true, collection: [ "Mathematics", "Science", "Technology", "Engineering" ] %>
+<%= f.input :grade_of_teaching, required: true, collection: [ "First Grade", "Second Grade", "Third Grade", "Fourth Grade"] %>
+</div>
+
+<div class="form-actions">
+<%= f.button :submit, class: "btn-custom" %>
+</div>
+<% end %>
+</div>
+
+</div>

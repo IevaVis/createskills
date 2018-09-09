@@ -1,0 +1,2 @@
+class DiyController < ApplicationController
+end
