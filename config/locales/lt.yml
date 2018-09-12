@@ -1,0 +1,42 @@
+
+lt:
+  global:
+    menu:
+      home: "Pradinis"
+      library: "Biblioteka"
+      new_user: "Naujas narys"
+      log_in: "Prisijungti"
+      teacher: "Mokytojas"
+      parent: "Tėvai"
+      sign_out: "Atsijungti"
+      language: "Kalba"
+  pages:
+    home:
+      title: "Labas"
+  models:
+  activerecord:
+    attributes:
+      teacher:
+        teacher_name: "Vardas"
+        teacher_country: "Šalis"
+        email: "El. paštas"
+        password: "Slaptažodis"
+        password_confirmation: "Slaptažodžio patvirtinimas"
+        area_field: "Mokymo sritis"
+        grade_of_teaching: "Lygis"
+      parent:
+        parent_name: "Vardas"
+        parent_country: "Šalis"
+        email: "El. paštas"
+        password: "Slaptažodis"
+        password_confirmation: "Slaptažodžio patvirtinimas"
+  teachers:
+    form:
+      title: "Mokytojo registracija"
+      submit: "Sukurti anketą"
+  parents:
+    form:
+      title: "Tėvų registracija"
+      submit: "Sukurti anketą"
+    show:
+      title: "Anketa"

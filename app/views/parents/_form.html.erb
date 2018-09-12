@@ -4,12 +4,12 @@
 
 	<div class="signup-form">
 
-		<h2>Parent Sign Up</h2><br/>
+		<h2><%= t ".title" %></h2><br/>
 
 <%= simple_form_for @parent, :html => { :multipart => true } do |f| %>
 <div class="form-inputs">
-<%= f.input :parent_name, required: true, autofocus: true, label: "Name" %>
-<%= f.input :parent_country, required: true, label: "Country", collection: [ "Portugal", "Lithuania", "Spain", "Greece" ] %>
+<%= f.input :parent_name, required: true, autofocus: true %>
+<%= f.input :parent_country, required: true, collection: [ "Portugal", "Lithuania", "Spain", "Greece" ] %>
 <%= f.input :email, required: true %>
 <%= f.input :password, required: true %>
 <%= f.input :password_confirmation, required: true %>

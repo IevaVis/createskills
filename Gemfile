@@ -16,6 +16,7 @@ gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 gem 'simple_form'
+gem 'flag-icons-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

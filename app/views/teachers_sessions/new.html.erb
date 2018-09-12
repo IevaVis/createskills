@@ -1,16 +1,24 @@
-<div class="login-form">
 
-<h1>Login</h1>
 
-<%= form_for(:session, url: teacher_sign_in_path) do |form| %>
+<div class="col-md-6 offset-md-3">
 
-<%= form.label :email %>
-<%= form.text_field :email %><br/>
+	<div class="login-form">
 
-<%= form.label :password %>
-<%= form.text_field :password %><br/>
+		<h2>Teachers Log In</h2>
 
-<%= form.submit "Log in" %>
-<% end %>
+		<%= simple_form_for :session, url: teacher_sign_in_path, :html => { :multipart => true } do |f| %>
+		  <div class="form-inputs">
+		    <%= f.input :email, required: false, autofocus: true %>
+		    <%= f.input :password, required: false %>
+		  </div>
+
+		  <div class="form-actions">
+		    <%= f.button :submit, "Log in", class: "btn-custom" %>
+		  </div>
+		<% end %>
+		
+	</div>
 
 </div>
+
+<%= render 'shared/alerts' %>

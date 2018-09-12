@@ -29,5 +29,85 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+# en:
+#   parents:
+#     show: 
+#       title: "Your profile"
+#   pages:
+#     home:
+#       title: "Hello there!"
+#   teachers:
+#     form:
+#       title: "Sign Up"
+  
+
+
 en:
-  hello: "Hello world"
+  global:
+    menu:
+      home: "Home"
+      library: "Library"
+      new_user: "New Member"
+      log_in: "Log In"
+      teacher: "Teacher"
+      parent: "Parent"
+      sign_out: "Sign Out"
+      language: "Language"
+  models:
+  activerecord:
+    attributes:
+      teacher:
+        teacher_name: "Name"
+        teacher_country: "Country"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        area_field: "Area field"
+        grade_of_teaching: "Grade of teaching"
+      parent:
+        parent_name: "Name"
+        parent_country: "Country"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+  teachers:
+    form:
+      title: "Teacher Sign Up"
+      submit: "Create Teacher"
+  pages:
+    home:
+      title: "Hello there"
+  parents:
+    form:
+      title: "Parent Sign Up"
+      submit: "Create Parent"
+    show:
+      title: "Your profile"
+
+
+     
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
