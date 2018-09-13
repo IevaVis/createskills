@@ -20,23 +20,15 @@ h1, h2, h3, h4, h5, h6 {
 /*HOMEPAGE*/
 /*Navbar*/
 
-.navbar {
-		&:hover {
-			background-color: darken(#eeeeee, 5%);
-			transition: 1s;
-		}
-	}
-	
-
 .homepage-logo {
 	height: 35px;
 	margin-left: -3%;
 }
 
 .nav-item {
-	font-family: Montserrat;
-	font-size: 18px;
-	margin: 3px;
+	font-family: Montseratt;
+	font-size: 17px;
+	margin: 2px;
 }
 
 $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
@@ -44,6 +36,7 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 .nav-item a {
   text-decoration: none;
   position: relative;
+  color: #fff !important;
 	&:before {
 	  content: "";
 	  position: absolute;
@@ -51,7 +44,7 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 	  height: 2px;
 	  bottom: 0;
 	  left: 0;
-	  background-color: #8cc63f;
+	  background: #fff;
 	  visibility: hidden;
 	  -webkit-transform: scaleX(0);
 	  transform: scaleX(0);
@@ -66,8 +59,12 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 	}
 
 	.dropdown-menu {
-		font-family: Montserrat;
-		font-size: 18px;
+		font-family: Montseratt;
+		font-size: 17px;
+	}
+
+	.dropdown-menu a {
+		color: grey !important;
 	}
 
 	.dropdown-menu a {
@@ -134,6 +131,8 @@ i.fab {
 	}
 
 }
+
+
 
 
 

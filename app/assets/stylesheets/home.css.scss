@@ -1,0 +1,34 @@
+
+.container-fluid {
+	position: relative;
+	-webkit-clip-path: circle(96% at 50% -50%);
+	clip-path: circle(96% at 50% -50%);
+
+}
+
+.homepage-image {
+	background: url("/assets/Teacher2.png") no-repeat center center fixed;
+	height: 600px;
+
+	-moz-box-shadow: inset 10px 10px 50px #fff;
+	-webkit-box-shadow: inset 10px 10px 50px #fff;
+	box-shadow: inset 10px 10px 50px #fff;
+
+	}
+
+.homepage-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(140, 198, 63, 0.5);
+  filter: alpha(opacity=50);
+
+}
+
+
+
+
+
