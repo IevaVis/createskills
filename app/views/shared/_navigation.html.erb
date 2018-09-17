@@ -1,6 +1,4 @@
-<div class="container-fluid homepage-image">
-<div class="container">
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#"><%= image_tag "Logo1.png", class: "homepage-logo" %></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -50,6 +48,15 @@
     </ul>
 
     <ul class="navbar-nav navbar-right">
+      <% if current_parent %>
+        <li class="nav-item">
+          <%= link_to t("global.menu.new-project"), new_diyproject_path, class: 'btn-custom' %>
+        </li>
+        <% elsif current_teacher %>
+         <li class="nav-item">
+          <%= link_to t("global.menu.new_document"), new_document_path, class: 'btn-custom' %>
+        </li>
+        <% end %>
        <li class="nav-item">
           <%= link_to_unless_current flag_icon(:lt), locale: "lt" %>
           <%= link_to_unless_current flag_icon(:gb), locale: "en" %>
@@ -58,12 +65,5 @@
           <%= link_to_unless_current flag_icon(:pt), locale: "pt" %>
         </li>
     </ul>
-
-   <!--  <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
   </div>
 </nav>
-</div>
-</div>

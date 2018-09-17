@@ -18,7 +18,7 @@ include TeachersSessionsHelper
 
   def destroy
     log_out
-    flash[:success] = "You have logged out"
+    flash[:success] = "You have logged out successfully!"
       redirect_to root_path
   end
 end

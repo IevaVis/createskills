@@ -1,2 +1,0 @@
-class DiyController < ApplicationController
-end

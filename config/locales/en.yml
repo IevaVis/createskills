@@ -53,6 +53,8 @@ en:
       parent: "Parent"
       sign_out: "Sign Out"
       language: "Language"
+      new-project: "Upload DIY"
+      new_document: "Upload Document"
   models:
   activerecord:
     attributes:

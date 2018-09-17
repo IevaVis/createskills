@@ -6,4 +6,5 @@ class Parent < ApplicationRecord
 	validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i }
 	validates :password, presence: true, length: { minimum: 5 }, allow_nil: true
 	validates :parent_country, presence: true
+	has_many :diyprojects, dependent: :destroy
 end

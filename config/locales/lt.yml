@@ -10,6 +10,8 @@ lt:
       parent: "Tėvai"
       sign_out: "Atsijungti"
       language: "Kalba"
+      new-project: "Naujas projektas"
+      new_document: "Naujas Dokumentas"
   pages:
     home:
       title: "Labas"

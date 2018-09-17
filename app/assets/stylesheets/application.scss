@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,500); 
 @import "bootstrap";
 @import "flag-icon";
+@import 'lightbox';
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
@@ -14,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 	box-shadow: 3px 3px 5px 6px #ccc;
 	padding: 1.5em 1.25em;
+}
+
+.alert {
+	margin-top: 5%;
 }
 
 
@@ -36,7 +41,6 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 .nav-item a {
   text-decoration: none;
   position: relative;
-  color: #fff !important;
 	&:before {
 	  content: "";
 	  position: absolute;
@@ -44,7 +48,7 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 	  height: 2px;
 	  bottom: 0;
 	  left: 0;
-	  background: #fff;
+	  background: rgb(140, 193, 60);
 	  visibility: hidden;
 	  -webkit-transform: scaleX(0);
 	  transform: scaleX(0);
@@ -131,6 +135,54 @@ i.fab {
 	}
 
 }
+
+
+/*DIYPROJECTS*/
+/*form*/
+
+.diyupload-form {
+	margin-top: 90px;
+	margin-bottom: 40px;
+	@include background-tile;
+
+	h2 {
+		margin-top: 0;
+	}
+
+}
+
+/*showpage*/
+.diyproject-showpage {
+	margin-top: 10%;
+}
+
+.diy-image {
+	background-color: white;
+	padding: 10px;
+	border-radius: 2px;
+	margin: 5px;
+	max-height: 350px;
+}
+
+.diy-image:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+
+/*ABOUT PAGE*/
+.about-page-info {
+	background-image: url("/assets/Pencils.jpg");
+	background-size: cover;
+	padding-top: 5%;
+	margin-top: 10%;
+	opacity: 0.6;
+
+}
+
+
+
+
 
 
 

@@ -1,32 +1,89 @@
 
-.container-fluid {
-	position: relative;
-	-webkit-clip-path: circle(96% at 50% -50%);
-	clip-path: circle(96% at 50% -50%);
 
-}
+/*.jumbotron {
+	height: 700px;
+	background-image: url("/assets/Primaryclass.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	-webkit-clip-path: circle(100% at 50% -50%);
+	clip-path: circle(100% at 50% -50%);
+	-moz-box-shadow: inset 10px 10px 30px #fff;
+	-webkit-box-shadow: inset 10px 10px 30px #fff;
+	box-shadow: inset 10px 10px 30px #fff;
+	opacity: 0.7;
+}*/
 
-.homepage-image {
-	background: url("/assets/Teacher2.png") no-repeat center center fixed;
+/*.container-fluid {
 	height: 600px;
+  background:url(/assets/Primaryclass.jpg) no-repeat center; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: 100% 100%;
+   box-shadow: inset 10px 10px 30px #fff;
+  
+}*/
 
-	-moz-box-shadow: inset 10px 10px 50px #fff;
-	-webkit-box-shadow: inset 10px 10px 50px #fff;
-	box-shadow: inset 10px 10px 50px #fff;
+body, html {
+    height: 100%;
+}
 
-	}
+.homepage-image { 
+    /* The image used */
+    margin-top: 5%;
+    background-image: url("/assets/Primaryclass.jpg");
 
-.homepage-image:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(140, 198, 63, 0.5);
-  filter: alpha(opacity=50);
+    /* Full height */
+    height: 70%;
+
+    /* Center and scale the image nicely */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-box-shadow: inset 10px 20px 30px #fff;
+		-webkit-box-shadow: inset 10px 20px 30px #fff;
+    box-shadow: inset 10px 10px 30px #fff;
+    opacity: 0.7;
+}
+
+.image-info {
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  transform:translate(65%, 50%);
 
 }
+
+.btn-custom2 {
+  margin-top: 10%;
+  background-color: #93278f;
+  color: #fff;
+  cursor:pointer;
+  opacity: 0.8
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
