@@ -1,9 +1,12 @@
 
 <div class="container diyproject-showpage">
 <div align="center">
+	<div class="diy-title">
 	<h1><%= @diyproject.title %></h1>
-<br/>
+</div>
+<div class="diy-description">
 <%= @diyproject.description %>
+</div>
 </div>
 
 <% if @diyproject.images.attached? %>
